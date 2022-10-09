@@ -18,6 +18,7 @@
   --footercontact-color: rgba(255, 255, 255, 0.6);
   --activ-accent-color: #188ce8;
   --linkwork-list-gap: 15px;
+  --border-color: #eeeeee;
 }
 body {
   font-family: "Roboto", "Raleway", sans-serif;
@@ -81,6 +82,7 @@ img {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  border-bottom: 1px solid #ececec;
 }
 .main-nav {
   display: flex;
@@ -158,6 +160,8 @@ img {
 /*-----------------page-footer---------------*/
 .footer {
   background: var(--footer-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -169,7 +173,13 @@ img {
   color: var(--accent-color);
   text-decoration: none;
 }
-.footer-addres {
+.footer-address-list {
+  margin-top: 20px;
+}
+.footer-item {
+  margin-top: 9px;
+}
+.footer-address {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -222,6 +232,7 @@ img {
 .hero {
   background: var(--section1-background);
   text-align: center;
+  padding: 200px 0;
 }
 .hero-title {
   font-style: normal;
@@ -231,8 +242,7 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--section1-title-color);
-  width: 696px;
-  padding-top: 200px;
+  max-width: 696px;
   margin: 0 auto;
 }
 .hero-button {
@@ -249,6 +259,7 @@ img {
   background: var(--accent-color);
   cursor: pointer;
   margin-top: 30px;
+  border-color: transparent;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -264,7 +275,7 @@ img {
   padding-bottom: 0;
 }
 .feature-item {
-  gap: 30px;
+  flex-basis: calc((100% - 3 * 30) / 4);
 }
 .feature-item:first-child {
   margin-right: 0;
@@ -307,6 +318,10 @@ img {
   display: flex;
   gap: 30px;
 }
+.worker-boxlist {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .worker-item {
   background-color: var(--body-background-color);
 }
@@ -330,7 +345,6 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 30px;
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -340,7 +354,6 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 30px;
 }
 /*-----------------page-2--------------------*/
 /*------------------work link button------------------------*/
@@ -356,7 +369,6 @@ img {
 .worklink-btn {
   border-radius: 4px;
   padding: 6px 22px;
-  min-width: 130px;
   font-style: normal;
   font-weight: 500;
   font-family: inherit;
@@ -367,6 +379,7 @@ img {
   text-align: center;
   color: var(--title-text-color);
   background-color: var(--section4-background);
+  border-color: transparent;
 }
 
 .worklink-btn:hover,
@@ -374,39 +387,36 @@ img {
   background: var(--accent-color);
   color: var(--header-background);
 }
+.card-content {
+  padding: 20px 24px;
+  border-left: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  max-width: 370;
+}
 /*-----------------Links to work-------------*/
 .linkwork-list {
-  /*outline: 1px solid tomato;*/
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  flex-basis: calc((100% - 2 * 30) / 3);
 }
 
-.linkwork-item {
-  /*outline: 1px solid teal;*/
-  flex-basis: calc((100% - 60px) / 3);
-}
 .linkwork-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--title-text-color);
-  padding-top: 20px;
   margin-bottom: 4px;
 }
 .linkwork-text {
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.87;
   letter-spacing: 0.03em;
-  /*text-align: center;*/
   color: var(--primary-text-color);
-  padding-bottom: 20px;
 }
 
-/*.card-content {
-  border: 1px solid #eeeeee;
-}*/
 /*-----------------work----------------------*/
 .visually-hidden {
   position: absolute;
