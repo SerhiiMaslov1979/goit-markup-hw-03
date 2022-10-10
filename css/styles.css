@@ -398,7 +398,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  flex-basis: calc((100% - 2 * 30) / 3);
+  flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
 .linkwork-title {
