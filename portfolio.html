@@ -19,36 +19,40 @@
   </head>
   <body>
     <header class="header-navigation">
-      <nav class="main-nav">
+      <div class="container flex">
         <!-- logo -->
         <a href="./index.html" class="header-navigation-logo"
           >Web<span class="logo-black">Studio</span></a
         >
         <!-- Меню навігації по інших сторінках -->
-        <ul class="header-list list">
+        <nav>
+          <ul class="header-list list">
+            <li class="header-item">
+              <a class="link" href="./index.html">Студія</a>
+            </li>
+            <li class="header-item">
+              <a class="link current" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="header-item">
+              <a class="link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contact list">
           <li class="header-item">
-            <a class="link" href="./index.html">Студія</a>
+            <!-- Посилання на адресу електронної пошти  -->
+            <a class="header-mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
           <li class="header-item">
-            <a class="link current" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li class="header-item">
-            <a class="link" href="#">Контакти</a>
+            <!-- Посилання на телефонний номер -->
+            <a class="header-phone" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="header-contact list">
-        <li class="header-item">
-          <!-- Посилання на адресу електронної пошти  -->
-          <a class="header-mail" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="header-item">
-          <!-- Посилання на телефонний номер -->
-          <a class="header-phone" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main class="body">
       <section class="workbtn section">
