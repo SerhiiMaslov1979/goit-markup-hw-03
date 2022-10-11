@@ -42,6 +42,7 @@ body {
 .linkwork-link {
   text-decoration: none;
 }
+/*.reset*/
 p,
 h1,
 h2,
@@ -128,6 +129,7 @@ img {
   color: var(--accent-color);
 }
 .header-mail {
+  display: inline-block;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -143,6 +145,7 @@ img {
   color: var(--accent-color);
 }
 .header-phone {
+  display: inline-block;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -188,8 +191,8 @@ img {
   color: #ffffff;
   text-decoration: none;
 }
-.footer-addres:hover,
-.footer-addres:focus {
+.footer-address:hover,
+.footer-address:focus {
   color: var(--accent-color);
 }
 .footer-mail {
@@ -379,7 +382,6 @@ img {
   color: var(--title-text-color);
   background-color: var(--section4-background);
   border-color: transparent;
-  margin-bottom: 50px;
 }
 
 .worklink-btn:hover,
@@ -399,6 +401,7 @@ img {
   flex-wrap: wrap;
   gap: 30px;
   flex-basis: calc((100% - 2 * 30px) / 3);
+  margin-top: 50px;
 }
 
 .linkwork-title {
